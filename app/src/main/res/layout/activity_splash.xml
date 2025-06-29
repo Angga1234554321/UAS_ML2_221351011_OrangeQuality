@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF4F7"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo_splash"
+        android:contentDescription="Logo Jeruk" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ORANGE QUALITY"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#F28B20"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prediksi kualitas jeruk berdasarkan data fisik dan kimia 🍊"
+        android:textAlignment="center"
+        android:textColor="#333333"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/app_bar_layout"
+            android:id="@+id/custom_toolbar" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aplikasi ini menggunakan beberapa fitur input untuk memprediksi kualitas jeruk, yaitu:"
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Weight: Berat Jeruk Dalam Gram"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fitur Weight (g) pada dataset Orange Quality merujuk pada berat jeruk dalam satuan gram. Ini adalah salah satu parameter fisik utama yang digunakan untuk menilai kualitas buah secara keseluruhan."
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Size: Ukuran Buah"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ukuran jeruk membantu model machine learning mengidentifikasi pola-pola fisik yang berkaitan dengan kualitas. \nMisalnya, ukuran sangat kecil bisa menandakan buah belum matang atau mengalami hambatan pertumbuhan. \nUkuran terlalu besar juga bisa mengindikasikan overgrowth, yang terkadang berdampak pada tekstur atau rasa."
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Sweetness: Tingkat Kemanisan"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sweetness merepresentasikan tingkat kemanisan buah jeruk, yaitu kadar gula alami seperti fruktosa dan sukrosa di dalam daging buah. \nBiasanya diukur menggunakan alat bernama refraktometer dan dinyatakan dalam satuan °Brix yang menunjukkan jumlah gula terlarut dalam jus buah. \nTingkat kemanisan merupakan indikator penting dalam menentukan kualitas dan rasa jeruk — semakin tinggi tingkat kemanisan, umumnya semakin disukai oleh konsumen."
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Acidity : tingkat Keasaman"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acidity menunjukkan tingkat keasaman buah jeruk, yang sangat memengaruhi rasa segar dan keseimbangan rasa. \nUmumnya, tingkat keasaman yang ideal membuat rasa jeruk tidak terlalu manis dan tidak terlalu hambar. \nDiukur melalui uji laboratorium terhadap kandungan asam sitrat, yang merupakan asam utama dalam jeruk."
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. Firmness : Kekerasan Buah"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Firmness menunjukkan tingkat kekerasan atau kekencangan buah jeruk. \nKekerasan buah mencerminkan kesegaran dan kematangan buah. Jeruk yang masih segar biasanya memiliki kekerasan yang optimal: tidak terlalu keras dan tidak terlalu lunak. \nDiukur dengan alat penguji tekstur atau tekanan, untuk melihat seberapa mudah buah berubah bentuk saat ditekan."
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6. Skin Color : Warna Kulit"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skin Color merepresentasikan warna kulit jeruk yang menjadi indikator utama dalam kematangan dan kualitas visual buah. \nWarna kulit jeruk biasanya berubah seiring proses pematangan, dari hijau → kuning → oranye terang."
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7. Juice Content : Persentase Kadar Jus"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Juice Content menunjukkan persentase kadar jus atau seberapa banyak cairan yang terdapat dalam buah jeruk dibandingkan total beratnya. \nSemakin tinggi nilai ini, berarti jeruk semakin berair dan segar."
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fitur-fitur ini akan diolah oleh model machine learning untuk menentukan apakah jeruk tersebut berkualitas baik atau tidak."
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:textColor="#333333" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema utama aplikasi -->
+    <style name="Theme.OrangeQuality" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#FFA500</item>
+        <item name="colorPrimaryVariant">#FF8C00</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="android:statusBarColor">#FF8C00</item>
+    </style>
+
+    <!-- Tema khusus untuk Splash Screen (tanpa AppBar) -->
+    <style name="Theme.OrangeQuality.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/white</item> <!-- Atau #FFF4F7 langsung -->
+        <item name="android:statusBarColor">#FF8C00</item>
+    </style>
+</resources>

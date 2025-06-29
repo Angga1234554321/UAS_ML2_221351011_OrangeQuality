@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/app_bar_layout"
+            android:id="@+id/custom_toolbar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="15dp"
+            android:text="Deskripsi"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dataset ini berisi informasi tentang kualitas jeruk berdasarkan fitur fisik dan kimia. Data diambil dari Kaggle dan digunakan untuk melatih model machine learning."
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fitur pada dataset meliputi:\n- Weight (Berat)\n- Size (Ukuran)\n- Sweetness (Kemanisan)\n- Acidity (Keasaman)\n- Firmness (Kekerasan)\n- Skin Color (Warna Kulit)\n- Juice Content (Kadar Jus)\n\nTarget: Kualitas Jeruk (Baik / Buruk)"
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:textColor="#333333" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/app_bar_layout"
+            android:id="@+id/custom_toolbar" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arsitektur Model"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model yang digunakan dalam aplikasi ini adalah Artificial Neural Network (ANN), yaitu jenis jaringan saraf tiruan yang terinspirasi dari cara kerja otak manusia dalam mengenali pola."
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model ini terdiri dari beberapa lapisan utama :"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Input Layer (Lapisan Masukan)"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menerima 7 fitur sebagai input, yaitu : \n- Weight (Berat) \n- Size (Ukuran) \n- Sweetness (Kemanisan) \n- Acidity (Keasaman) \n- Firmness (Kekerasan) \n- Skin Color (Warna Kulit) \n- Juice Content (Kadar Jus)"
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Hidden Layers (Lapisan Tersembunyi)"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terdiri dari 2 lapisan tersembunyi (bisa disesuaikan dengan jumlah neuron, contoh: 16 dan 8 neuron). \nSetiap neuron terhubung dengan semua neuron di lapisan sebelumnya (fully connected). \nMenggunakan fungsi aktivasi ReLU (Rectified Linear Unit) untuk memperkenalkan non-linearitas."
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Output Layer (Lapisan Keluaran)"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terdiri dari 1 neuron dengan fungsi aktivasi sigmoid. \nMenghasilkan nilai antara 0 dan 1 yang merepresentasikan probabilitas kualitas buah jeruk : \n- Nilai mendekati 1: Jeruk Berkualitas Baik \n- Nilai mendekati 0: Jeruk Berkualitas Buruk"
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Loss Function dan Optimizer"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- Loss Function: Binary Crossentropy (karena targetnya adalah klasifikasi biner). \n- Optimizer: Adam (cepat dalam konvergensi dan adaptif terhadap learning rate)."
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cara Kerja Singkat"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Input data dari pengguna (berat, ukuran, dll) diproses melalui lapisan ANN. Setiap lapisan melakukan transformasi dan ekstraksi fitur hingga menghasilkan prediksi akhir tentang kualitas jeruk dalam bentuk Baik atau Buruk."
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp" />
+
+    </LinearLayout>
+</ScrollView>
